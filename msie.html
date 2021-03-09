@@ -1,0 +1,73 @@
+<!-- Microsoft Internet Explorer Overlay -->
+
+<div id="overlay"> 
+	<div class="landing-wrapper">
+		<div class="landing-window">
+			<div class="landing-main">
+				<h1 class="landing-title browsers-title">Brskalnik ni podprt!</h1><br/>
+				<div class="text-tip1">Uporabljate zastarel in nevaren brskalnik!</div>
+				<br/>
+				<div class="text-tip">Priporočamo, da spletno stran uporabljate z naslednjimi brskalniki:</div>
+				<div class="browsers">
+				
+					<div class="browser">
+						<a class="image" href="https://brave.com/" target="_blank">
+							<img class="image-logo" src="images/popup/logo-brave.png">
+						</a>
+						<a class="browser-title" href="https://brave.com/" target="_blank">Brave</a>
+					</div>
+					<div class="browser">
+						<a class="image" href="https://www.google.com/chrome/" target="_blank">
+							<img class="image-logo" src="images/popup/logo-chrome.png">
+						</a>
+						<a class="browser-title" href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
+					</div>
+					<div class="browser">
+						<a class="image" href="https://www.firefox.com/" target="_blank">
+							<img class="image-logo" src="images/popup/logo-firefox.png">
+						</a>
+						<a class="browser-title" href="https://www.firefox.com/" target="_blank">Mozilla Firefox</a>
+					</div>
+					
+				</div>
+				<div class="text-tip">Spletna stran podpira tudi:</div>
+				<div class="browsers browsers-last">
+					
+					<div class="browser">
+						<a class="image" href="https://www.opera.com/" target="_blank">
+							<img class="image-logo" src="images/popup/logo-opera.png">
+						</a>
+						<a class="browser-title" href="https://www.opera.com/" target="_blank">Opera</a>
+					</div>
+					<div class="browser">
+						<a class="image" href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">
+							<img class="image-logo" src="images/popup/logo-edge.png">
+						</a>
+						<a class="browser-title" href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>
+					</div>
+					<div class="browser browser-safari">
+						<a class="image" href="https://support.apple.com/downloads/#safari" target="_blank">
+							<img class="image-logo" src="images/popup/logo-safari.png">
+						</a>
+						<a class="browser-title" href="https://support.apple.com/downloads/#safari" target="_blank">Safari (samo MacOS 10.8+)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<script>
+	function msieversion() {
+		var ua = window.navigator.userAgent;
+		var msie = ua.indexOf("MSIE ");
+		if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
+			document.getElementById("overlay").style.display = "block";
+			document.body.style.overflow = 'hidden';
+			document.getElementById('jf-mainnav').style.display = 'none';
+		}
+	}
+	msieversion()
+</script>
